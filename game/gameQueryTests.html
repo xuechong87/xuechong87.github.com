@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--中文-->
+	<head>
+	    <title>game test</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta charset="utf-8"> 
+	    
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://gamequeryjs.com/wp-content/uploads/jquery.gamequery-0.7.1.js"></script>
+		<script type="text/javascript">
+		var PLAYGROUND_HEIGHT = 999;
+		var PLAYGROUND_WIDTH = 888;
+		$("#playground")
+		.playground({height: PLAYGROUND_HEIGHT, width: PLAYGROUND_WIDTH})
+		.addGroup("background", {width: PLAYGROUND_WIDTH, height: PLAYGROUND_HEIGHT})
+		.addGroup("actors", {width: PLAYGROUND_WIDTH, height: PLAYGROUND_HEIGHT}).end()
+		.addGroup("playerMissileLayer",{width: PLAYGROUND_WIDTH, height: PLAYGROUND_HEIGHT}).end()
+		.addGroup("enemiesMissileLayer",{width: PLAYGROUND_WIDTH, height: PLAYGROUND_HEIGHT});
+
+		</script>
+  	</head>
+
+  	<body>
+  		<div id="playground" ></div>
+
+  		<canvas id="paly" >
+  		</canvas>
+
+  		  		
+  	</body>
+
+
+</html>
